@@ -36,5 +36,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.7.0",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.2",
+    "prettier": "2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,css,md}": "prettier --write"
   }
 }
