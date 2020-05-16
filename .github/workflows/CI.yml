@@ -23,7 +23,7 @@ jobs:
       - name: run tests
         run: |
           npm ci
-          npm run lint
+          # npm run lint
           # npm run typecheck
           # npm run test:coverage
         
